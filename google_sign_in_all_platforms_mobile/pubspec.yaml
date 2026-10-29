@@ -1,5 +1,6 @@
 name: google_sign_in_all_platforms_mobile
 description: Mobile Platform Implementation for google_sign_in_all_platforms
+publish_to: none
 version: 0.2.1
 homepage: https://github.com/vishnuagbly/google_sign_in_all_platforms/tree/main/google_sign_in_all_platforms_mobile
 
@@ -13,7 +14,11 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  google_sign_in: ^7.1.1
+  google_sign_in:
+    git:
+      url: https://github.com/arifozgun/packages.git
+      ref: google-sign-in-ios-10
+      path: packages/google_sign_in
   google_sign_in_all_platforms_interface: ^0.2.0
   http: ^1.2.0
 
